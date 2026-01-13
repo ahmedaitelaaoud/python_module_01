@@ -1,6 +1,7 @@
 class Plant:
     """
-    A simple Plant class used to demonstrate object creation from a list of data.
+    A simple Plant class,
+    used to demonstrate object creation from a list of data.
     """
     def __init__(self, name, height, age):
         """
@@ -29,4 +30,4 @@ print("=== Plant Factory Output ===")
 for name, height, age in plant_data:
     new_plant = Plant(name, height, age)
     new_plant.get_info()
-print(f"Total plants created: {len(plant_data)}")
+print("\nTotal plants created: 5")

@@ -3,10 +3,11 @@ class Plant:
     def __init__(self, name, height, age):
         self.name = name
         self.height = height
-        self.age= age
+        self.age = age
 
     def get_info(self):
         print(f"{self.name}: {self.height}cm, {self.age} days old")
+
 
 class Flower(Plant):
     """
@@ -29,13 +30,17 @@ class Flower(Plant):
         self.color = color
 
     def get_info(self):
-        print(f"{self.name} (Flower): {self.height}cm, {self.age} days, {self.color} color")
+        print(
+            f"{self.name} (Flower): {self.height}cm, {self.age} days, "
+            f"{self.color} color"
+            )
 
     def bloom(self):
         """
         Simulates the blooming behavior of the flower.
         """
         print(f"{self.name} is blooming beautifully")
+
 
 class Tree(Plant):
     """
@@ -56,11 +61,15 @@ class Tree(Plant):
         self.diametre = diametre
 
     def get_info(self):
-        print(f"{self.name} (Tree): {self.height}cm, {self.age} days, {self.diametre} diameter")
+        print(
+            f"{self.name} (Tree): {self.height}cm, {self.age} days, "
+            f"{self.diametre} diameter"
+            )
 
     def provide_shade(self):
         """Calculates and prints the shade coverage provided by the tree."""
         print(f"{self.name} provides 78 square meters of shade")
+
 
 class Vegetable(Plant):
     """
@@ -74,11 +83,15 @@ class Vegetable(Plant):
         self.veg_type = veg_type
 
     def get_info(self):
-        print(f"{self.name} (Vegetable): {self.height}cm, {self.age} days, {self.veg_type} harvest")
+        print(
+            f"{self.name} (Vegetable): {self.height}cm, {self.age} days, "
+            f"{self.veg_type} harvest"
+            )
 
     def harvest_info(self):
         """Displays nutritional information about the vegetable."""
         print(f"{self.name} is rich in vitamin C")
+
 
 print("=== Garden Plant Types ===\n")
 
