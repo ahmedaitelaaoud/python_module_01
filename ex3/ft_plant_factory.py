@@ -1,10 +1,20 @@
 class Plant:
+    """
+    A simple Plant class used to demonstrate object creation from a list of data.
+    """
     def __init__(self, name, height, age):
+        """
+        Args:
+            name (str): Plant name.
+            height (int): Height in cm.
+            age (int): Age in days.
+        """
         self.name = name
         self.height = height
         self.age = age
 
     def get_info(self):
+        """Displays creation confirmation with plant details."""
         print(f"Created: {self.name} ({self.height}cm, {self.age} days old)")
 
 
