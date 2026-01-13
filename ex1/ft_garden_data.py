@@ -1,39 +1,31 @@
 class Plant:
     """
-    Represents a plant in the garden with basic attributes.
+    Represents a base plant entity in the garden ecosystem.
 
     Attributes:
-        name: The plant's name
-        height: Current height in centimeters
-        age: Age in days
+        name (str): The common name of the plant.
+        height (int): The current height of the plant in cm.
+        age (int): The age of the plant in days.
     """
 
     def __init__(self, name, height, age):
         """
-        Initialize a new plant.
+        Initializes a new Plant instance.
 
         Args:
-            name: The plant's name
-            height: Starting height in cm
-            age: Starting age in days
+            name (str): The name of the plant (e.g., "Rose").
+            height (int): Initial height in centimeters.
+            age (int): Initial age in days.
         """
         self.name = name
         self.height = height
         self.age = age
 
-    def get_info(self):
-        """
-        Shown info about plant
-
-        """
-        print(f"{self.name}: {self.height}cm, {self.age} days old")
-
-
 
 rose = Plant("Rose", 25, 30)
 sunflower = Plant("Sunflower", 80, 45)
 cactus = Plant("Cactus", 15, 120)
-# remove get.info
-rose.get_info()
-sunflower.get_info()
-cactus.get_info()
+
+print(f"{rose.name}: {rose.height}cm, {rose.age} days old")
+print(f"{sunflower.name}: {sunflower.height}cm, {sunflower.age} days old")
+print(f"{cactus.name}: {cactus.height}cm, {cactus.age} days old")
