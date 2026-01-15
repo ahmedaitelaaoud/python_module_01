@@ -48,20 +48,19 @@ class SecurePlant:
             print("Security: Negative height rejected")
 
 
-if __name__ == "__main__":
-    print("=== Garden Security System ===")
+print("=== Garden Security System ===")
 
-    plant1 = SecurePlant("Rose")
-    print(f"Plant created: {plant1.name}")
-    plant1.set_height(25)
-    plant1.set_age(30)
+plant1 = SecurePlant("Rose")
+print(f"Plant created: {plant1.name}")
+plant1.set_height(25)
+plant1.set_age(30)
 
-    print()
+print()
 
-    plant1.set_height(-5)
-    plant1.set_age(-5)
+plant1.set_height(-5)
+plant1.set_age(-5)
 
-    print(
-        f"\nCurrent plant: {plant1.name} "
-        f"({plant1.get_height()}cm, {plant1.get_age()} days ols)"
-        )
+print(
+    f"\nCurrent plant: {plant1.name} "
+    f"({plant1.get_height()}cm, {plant1.get_age()} days ols)"
+    )
