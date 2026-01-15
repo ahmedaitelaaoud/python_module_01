@@ -21,7 +21,6 @@ class SecurePlant:
         Updates the plant's height after validating the input.
 
         Security check: Rejects negative values to preserve physics.
-
         Args:
             new_height (int): The target height in cm.
         """
@@ -62,5 +61,5 @@ plant1.set_age(-5)
 
 print(
     f"\nCurrent plant: {plant1.name} "
-    f"({plant1.get_height()}cm, {plant1.get_age()} days ols)"
+    f"({plant1.get_height()}cm, {plant1.get_age()} days old)"
     )
